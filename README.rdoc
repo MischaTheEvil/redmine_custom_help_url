@@ -1,0 +1,60 @@
+=Redmine Custom Help URL plugin
+
+Redmine Custom Help URL plugin is a Redmine plugin which will replace the help top-menu item with one for which an admin can define the URL himself without touching the Redmine core.
+
+==Author
+
+* Mischa The Evil
+
+==Changelog
+
+For the complete changelog see the <tt>CHANGELOG</tt>-file in the Redmine Custom Help URL plugin directory.
+
+==Latest release
+
+The currently available, latest release of the plugin is version <b>0.0.2</b>.
+
+==Compatibility
+
+This plugin should be compatible with both Redmine 1.x and 2.x, though has (yet) only been tested on 1.x!
+
+==Obtaining 
+
+<i>URL of the GitHub repository: http://github.com/MischaTheEvil/redmine_custom_help_url/tree/master</i>
+
+The source of this plugin can be "cloned" from the GitHub-repo using:
+
+===Redmine 1.x
+<tt>$ cd {RAILS_ROOT}/vendor/plugins && git clone git://github.com/MischaTheEvil/redmine_custom_help_url.git</tt>
+
+===Redmine 2.x
+<tt>$ cd {RAILS_ROOT}/plugins && git clone git://github.com/MischaTheEvil/redmine_custom_help_url.git</tt>
+
+==Installation
+
+- Download the plugin from the available source (see "Obtaining")
+- Install the plugin as described at: http://www.redmine.org/wiki/redmine/Plugins (<b>this plugin does not require a plugin database migration</b>)
+- Restart Redmine
+
+==Usage
+
+Just install the plugin. After restarting goto <tt>"Administration"</tt> => <tt>"Plugins"</tt> => <tt>"Redmine Custom Help URL plugin"</tt> => <tt>"Configure"</tt> and configure the new URL which should be used for the <tt>"Help"</tt> link in the top menu in the <tt>"Custom Help URL"</tt> text field (:size => 60).
+Note: Redmine must be restarted after changing <tt>"Custom Help URL"</tt> value before the new url is used.
+
+==Uninstalling
+
+- Remove the directory <i>"redmine_custom_help_url"</i> from the plugin-directory, either <i>"../vendor/plugins"</i> or <i>"../plugins"</i> depending on your Redmine version
+- Restart Redmine
+
+==Licensing
+
+This plugin is open-source and licensed under the "GNU General Public License v2" (GPL, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html). See the included <tt>GPL.txt</tt> and <tt>LICENSE.txt</tt> files for details.
+
+* (C)2013, Mischa The Evil
+
+==Support
+
+If you would like to report a bug or request a new feature you can open a new issue at the issue-tracking section of the plugins' GitHub site: http://github.com/MischaTheEvil/redmine_custom_help_url/issues.
+You can also post your feedback about the plugin in the dedicated plugin-section of the Redmine forums (http://www.redmine.org/projects/redmine/boards/3)
+
+As an alternative you can also join the <tt>#redmine</tt> channel on the "freenode IRC network" (http://freenode.net/irc_servers.shtml) to see if there is anyone who can provide some support.

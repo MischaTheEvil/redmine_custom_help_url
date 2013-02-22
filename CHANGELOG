@@ -1,0 +1,13 @@
+0.0.2 (2013-02-22):
+    * Workaround requirement for a call to Setting.plugin_redmine_custom_help_url['custom_help_url'], via
+      RedmineCustomHelpUrl::Redmine::Info, by moving the addition of new help top_menu item to after
+      Redmine::Plugin.register
+    * Refactor: use overridden module RedmineCustomHelpUrl::Redmine::Info instead of directly calling
+      Setting.plugin_redmine_custom_help_url['custom_help_url']
+    * Add fall-back mechanism to Redmine default (http://www.redmine.org/guide) when
+      RedmineCustomHelpUrl::Redmine::Info.help_url is not configured (blank)
+    * Generic Rails 3 / Redmine 2.x support
+    * Added documentation
+
+0.0.1 (2013-02-21):
+    - Un-released skeleton version of the plugin with only basic functionality (Redmine 1.x only)
